@@ -1,0 +1,59 @@
+.settings-menu {
+  position: fixed;
+  display: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1001;
+  font-size: 14px;
+  color: black;
+}
+
+.settings-menu div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.settings-menu label {
+  flex: 1;
+  text-align: left;
+  font-weight: bold;
+}
+
+.settings-menu input {
+  flex: 1;
+  max-width: 100px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#settings-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+#settings-icon {
+  cursor: pointer;
+  font-size: 24px;
+  background: white;
+  margin: 5px;
+}
+
+input[type=color] {
+  margin: 5px;
+  border: none;
+  direction: rtl;
+}
+
+input[type=color]:hover {
+  background: var(--background-color);
+}

@@ -1,0 +1,75 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: "Helvetica", "Courier New", sans-serif;
+
+  --font-size: 20px;
+  --table-text-color: #000;
+  --table-cell-color: '#f78ae7';
+  --background-color: rgb(251, 145, 235);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: start;
+  min-width: 320px;
+  min-height: 100vh;
+
+  color: var(--table-text-color);
+}
+
+.headers rect {
+ fill: var(--background-color);
+}
+
+.table-cell {
+  background-color: var(--table-cell-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+ background-color: var(--background-color) !important;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: start; 
+ place-items: center;
+ min-width: 320px;
+ min-height: 100vh;
+ overflow-x: auto;
+ overflow-y: auto;
+}
+
+ .node rect {
+ stroke: black;
+ stroke-width: 2px;
+}
+
+.node text {
+  font-family: "Trebuchet MS", "Courier New", sans-serif;
+  font-size: var(--font-size);
+  pointer-events: none;
+}
+
+#svg-container {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  position: relative;
+}

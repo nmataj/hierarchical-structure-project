@@ -1,0 +1,34 @@
+.header-container {
+  /* position: fixed;
+  top: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: 60px;
+  background-color: #fff;
+  color: black;
+  border-radius:  0 0 2px 2px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#filter-icon, #settings-icon {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px 15px;
+}
+

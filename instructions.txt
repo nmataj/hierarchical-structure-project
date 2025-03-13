@@ -1,0 +1,5 @@
+Left click on Name to expand/collapse, 
+Left click on Value to invert,
+Right click on Value to skip,
+Zoom,
+File upload
